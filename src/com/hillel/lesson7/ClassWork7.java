@@ -83,24 +83,37 @@ public class ClassWork7 {
         hillell_emergency_service.checkIsHumanAliveAndCure(vlad);
         hillell_emergency_service.checkIsHumanAliveAndCure(katya);
 
-        covidResearchIndex = covidResearchIndex + einstein.performResearch();
-        covidResearchIndex = covidResearchIndex + esmeralda.performResearch();
-        covidResearchIndex = covidResearchIndex + alfred.performResearch();
+        updateResearchIndexByScientist(einstein);
+        updateResearchIndexByScientist(esmeralda);
+        updateResearchIndexByScientist(alfred);
 
-        isCovidDefeated(covid);
+//        covidResearchIndex = covidResearchIndex + einstein.performResearch();
+//        covidResearchIndex = covidResearchIndex + esmeralda.performResearch();
+//        covidResearchIndex = covidResearchIndex + alfred.performResearch();
+
+        System.out.println("covidResearchIndex now is :" + covidResearchIndex);
+
+        covid.scientistImpactToToDefeatCoronavirus(covidResearchIndex);
+
+        System.out.println("FIFTH WAVE OF CORONA");
+        covid.attack(dima);
+        covid.attack(vlad);
+        covid.attack(katya);
+
+//        isCovidDefeated(covid);
     }
 
 
-    private static void isCovidDefeated(Coronavirus coronavirus) {
-        boolean isDefeated = covidResearchIndex >= 100;
-
-        if (isDefeated) {
-            System.out.println("HHHHHEEEEYY COVID DEFEATED !!!!");
-            coronavirus.setCuredAndDestroyed(true);
-        } else {
-            System.out.println("HHHHHEEEEYY NOT DEFEATED YET!!!! STILL WAIT FOR RESEARCH, STATUS : " + covidResearchIndex);
-        }
-    }
+//    private static void isCovidDefeated(Coronavirus coronavirus) {
+//        boolean isDefeated = covidResearchIndex >= 100;
+//
+//        if (isDefeated) {
+//            System.out.println("HHHHHEEEEYY COVID DEFEATED !!!!");
+//            coronavirus.setCuredAndDestroyed(true);
+//        } else {
+//            System.out.println("HHHHHEEEEYY NOT DEFEATED YET!!!! STILL WAIT FOR RESEARCH, STATUS : " + covidResearchIndex);
+//        }
+//    }
 
     private static void coronaAttack(Human human) {
 
@@ -144,5 +157,9 @@ public class ClassWork7 {
         return randomHealthDamage.ints(min, max)
                 .findFirst()
                 .getAsInt();
+    }
+
+    private static void updateResearchIndexByScientist(Scientist scientist){
+        covidResearchIndex = covidResearchIndex + scientist.performResearch();
     }
 }
