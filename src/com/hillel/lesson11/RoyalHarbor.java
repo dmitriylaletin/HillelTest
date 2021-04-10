@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class RoyalHarbor {
 
-    private String lord;
-    private String suzerain[] = new String[4];
+    private Lord lord;
+    private Lord suzerain[] = new Lord[4];
     private int loyalty;
     private int defenceOfCastle;
     private String enemyArmy;
 
-    public RoyalHarbor(String lord, String[] suzerain, int loyalty, int defenceOfCastle, String enemyArmy) {
+    public RoyalHarbor(Lord lord, Lord[] suzerain, int loyalty, int defenceOfCastle, String enemyArmy) {
         this.lord = lord;
         this.suzerain = suzerain;
         this.loyalty = loyalty;
@@ -18,19 +18,19 @@ public class RoyalHarbor {
         this.enemyArmy = enemyArmy;
     }
 
-    public String getLord() {
+    public Lord getLord() {
         return lord;
     }
 
-    public void setLord(String lord) {
+    public void setLord(Lord lord) {
         this.lord = lord;
     }
 
-    public String[] getSuzerain() {
+    public Lord[] getSuzerain() {
         return suzerain;
     }
 
-    public void setSuzerain(String[] suzerain) {
+    public void setSuzerain(Lord[] suzerain) {
         this.suzerain = suzerain;
     }
 
