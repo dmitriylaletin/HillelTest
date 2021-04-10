@@ -6,18 +6,6 @@ public class _08Dragon {
     private int health;
     private int attackPower;
 
-    public _08Dragon() {
-
-    }
-
-    public _08Dragon(String name) {
-        this.name = name;
-    }
-
-    public _08Dragon(String name, int health) {
-        this.name = name;
-        this.health = health;
-    }
 
     public _08Dragon(String name, int health, int attackPower) {
         this.name = name;
