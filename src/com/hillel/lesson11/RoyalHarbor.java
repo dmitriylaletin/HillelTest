@@ -1,4 +1,4 @@
-package com.hillel.Lesson11;
+package com.hillel.lesson11;
 
 import java.util.Arrays;
 
