@@ -1,5 +1,6 @@
 package com.hillel.lesson11;
 
+/*8)  Обьект дракон с полями имя, жизнь, сила атаки (не учитывая степень защиты)*/
 public class _08Dragon {
 
     private String name;
