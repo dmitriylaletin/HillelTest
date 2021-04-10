@@ -1,4 +1,4 @@
-package com.hillel.lesson11;
+package com.hillel.Lesson11;
 
 public class Kingdom {
     static int gold = 100000;

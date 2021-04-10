@@ -1,25 +1,25 @@
 package com.hillel.Lesson11;
 
-public class Dpacon {
+public class Dragon {
 
     private String name;
     private int health;
     private int attackPower;
 
-    public Dpacon() {
+    public Dragon() {
 
     }
 
-    public Dpacon(String name) {
+    public Dragon(String name) {
         this.name = name;
     }
 
-    public Dpacon(String name, int health) {
+    public Dragon(String name, int health) {
         this.name = name;
         this.health = health;
     }
 
-    public Dpacon(String name, int health, int attackPower) {
+    public Dragon(String name, int health, int attackPower) {
         this.name = name;
         this.health = health;
         this.attackPower = attackPower;
