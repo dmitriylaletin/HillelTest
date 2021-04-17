@@ -6,11 +6,20 @@ public class Lord {
     private String name;
     private int life = 100;
     private boolean loyalty;
+    private int defence;
 
     public Lord(String name, int life) {
         this.loyalty = randomLoyalty();
         this.name = name;
         this.life = life;
+    }
+
+    public int getDefence() {
+        return defence;
+    }
+
+    public void setDefence(int defence) {
+        this.defence = defence;
     }
 
     public String getName() {
@@ -55,6 +64,7 @@ public class Lord {
                 "name='" + name + '\'' +
                 ", life=" + life +
                 ", loyalty=" + loyalty +
+                ", defence=" + defence +
                 '}';
     }
 }

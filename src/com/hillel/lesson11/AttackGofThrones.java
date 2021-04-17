@@ -2,7 +2,7 @@ package com.hillel.lesson11;
 
 public interface AttackGofThrones {
     //объекты домов вестероса должны уметь атаковать
-    int attackLords (int countOfInhabitants);
+    int attackLordsHouse (HouseOfVesteros);
     //объекты армия должны уметь атаковать замки
     int attackCastle (int defenceOfCastle);
     //объекты армия должны уметь атаковать армии
