@@ -2,5 +2,5 @@ package com.hillel.lesson11;
 
 public interface GetArmyForGold {
     //Объекты домов вестероса должны ... набирать армию за золото
-    boolean getArmyForGold (boolean armyLocationInCastle);
+    void getArmyForGold (int gold);
 }
